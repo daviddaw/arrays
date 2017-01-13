@@ -4,29 +4,28 @@ public class Ejercicio1 {
 
 	public static void main(String[] args) {
 		int[] array1 = new int [10];
+		int[] array2 = new int [10];
 		
-		//crear
-		for (int i = 0; i < array1.length; i++) {
-			array1[i]=i*2;
+		crearArray(array1);
+		crearArray(array2);
+	}
+	
+	
+	public static void crearArray (int[] array)	{
+	
+		for (int i = 0; i < array.length; i++) 
+		{
+			System.out.println("Nuevo array");
+			System.out.println("Faltan por introducir "+(10-i)+" numeros");
+			array[i]=LeerTeclado.readInteger();
+			
 		}
-		/*
-		//visualizar
-		for (int i = 0; i < array1.length; i++) {
-			System.out.println(array1[i]+ " ");
-		}*/
-		//Es mejor con metodos
-		visualizarArray(array1);
 		
-		
-		
-
-      
-
 	}
 
-	private static void visualizarArray(int[] array1) {
-		for (int i = 0; i < array1.length; i++) {
-			System.out.println(array1[i]+ " ");
+	public static void visualizarArray(int[] array) {
+		for (int i = 0; i < array.length; i++) {
+			System.out.println(array[i]+ " ");
 		}
 		
 	}
