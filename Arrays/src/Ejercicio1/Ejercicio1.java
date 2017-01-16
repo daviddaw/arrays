@@ -8,6 +8,9 @@ public class Ejercicio1 {
 		
 		crearArray(array1);
 		crearArray(array2);
+		visualizarArray(array1);
+		visualizarArray(array2);
+		visualizarArray(restarArray(array1, array2));
 	}
 	
 	
@@ -22,18 +25,23 @@ public class Ejercicio1 {
 		
 	}
 
-	public static int sumarArray(int[] array1, int[] array2)
+	public static int [] restarArray(int[] array1, int[] array2)
+	/*no olvidar poner corchetes "public static int []" */
 	{
-		int suma[];
-		return suma;
+		int[] resta=new int[array1.length];
+		for (int i = 0; i < array1.length; i++) {
+			resta[i]=array1[i]-array2[i];			
+		}
+
+		return resta;
 		
 	}
 	
 	public static void visualizarArray(int[] array) {
 		for (int i = 0; i < array.length; i++) {
-			System.out.println(array[i]+ " ");
+			System.out.print(array[i]+ " ");
 		}
-		
+		System.out.println();
 	}
 
 }
