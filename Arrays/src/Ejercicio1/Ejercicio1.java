@@ -2,7 +2,7 @@ package Ejercicio1;
 
 public class Ejercicio1 {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) {////////////
 		int[] array1 = new int [10];
 		int[] array2 = new int [10];
 		
@@ -10,7 +10,7 @@ public class Ejercicio1 {
 		crearArray(array2);
 		visualizarArray(array1);
 		visualizarArray(array2);
-		visualizarArray(restarArray(array1, array2));
+		visualizarArray(productoArray(array1, array2));
 	}
 	
 	
@@ -18,22 +18,22 @@ public class Ejercicio1 {
 	
 		for (int i = 0; i < array.length; i++) 
 		{
-			System.out.println("Nuevo Array");
+			
 			System.out.println("Faltan por introducir "+(10-i)+" numeros");
 			array[i]=LeerTeclado.readInteger();
 		}
-		
+		System.out.println("Array");
 	}
 
-	public static int [] restarArray(int[] array1, int[] array2)
+	public static int [] productoArray(int[] array1, int[] array2)
 	/*no olvidar poner corchetes "public static int []" */
 	{
-		int[] resta=new int[array1.length];
+		int[] producto=new int[array1.length];
 		for (int i = 0; i < array1.length; i++) {
-			resta[i]=array1[i]-array2[i];			
+			producto[i]=array1[i]*array2[i];			
 		}
 
-		return resta;
+		return producto;
 		
 	}
 	
