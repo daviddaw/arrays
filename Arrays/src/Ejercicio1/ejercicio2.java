@@ -9,15 +9,20 @@ public class ejercicio2 {
 
 	}
 	public static void visualizarArray (int[] array){
+		
 		for (int i = 0; i < array.length; i++) {
 			if (array[i]<17) {
 				System.out.print(array[i]+" ");
 			}
+			array[i]=array[i]+array[i];
+			System.out.println(array[i]);
+			
 
 			
 		}
 		System.out.println(" ");
 	}
+	
 
 }
 
