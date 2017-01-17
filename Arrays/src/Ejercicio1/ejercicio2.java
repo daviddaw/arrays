@@ -11,23 +11,26 @@ public class ejercicio2 {
 
 	}
 	public static void contadorPositivosNegativosCeros(int[] array1) {
-		int acumulador=0;
+		int contPositivos=0,contNegativos=0,contceros=0;
+		
 		for (int i = 0; i < array1.length; i++) {
 			if (array1[i]<0) {
-				System.out.println("El numero es negativo");
-
+				//El numero es negativo
+				contNegativos++;
 			} else {
 				if (array1[i]>0) {
-					System.out.println("El número es positivo");
+					//El número es positivo
+					contPositivos++;
 				} else {
 
-					System.out.println("El número es cero");
+					//El número es cero
+					contceros++;
 				}
 
 			}
 			
 		}
-		
+		System.out.println(" positivos "+contPositivos+" negativos "+contNegativos+" ceros "+contceros);
 	}
 	
 	
