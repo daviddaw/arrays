@@ -1,5 +1,7 @@
 package Ejercicio1;
 
+
+
 public class ejercicio2 {
 
 	public static void main(String[] args) {
@@ -8,8 +10,31 @@ public class ejercicio2 {
 		visualizarArray(array1);
 		sumarPosiciones(array1);
 		contadorPositivosNegativosCeros(array1);
+		numeroMayor(array1);
 
 	}
+	
+	 public static void numeroMayor(int[] array1) {
+			int max,cont=0;
+			max=Integer.MIN_VALUE;
+		
+			for (int i = 0; i < array1.length; i++) {
+		
+			
+			
+				if (array1[i]>max) {
+					max= array1[i];
+				} 
+				
+				cont=cont+1;
+			}
+		
+			
+			
+			System.out.println(" el valor maximo es "+max);
+		} 
+	 
+	 
 	public static void contadorPositivosNegativosCeros(int[] array1) {
 		int contPositivos=0,contNegativos=0,contceros=0;
 		
@@ -54,11 +79,12 @@ public class ejercicio2 {
 		}
 		System.out.println(" ");
 	}
-	
+
+	}
 	
 
 	
 	
 	
-}
+
 
