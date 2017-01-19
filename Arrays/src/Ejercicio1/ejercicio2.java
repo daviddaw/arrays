@@ -5,7 +5,7 @@ package Ejercicio1;
 public class ejercicio2 {
 
 	public static void main(String[] args) {
-		int[] array1 = new int [3];
+		int[] array1 = new int [10];
 		Ejercicio1.crearArray(array1);
 		visualizarArray(array1);
 		sumarPosiciones(array1);
@@ -14,25 +14,21 @@ public class ejercicio2 {
 
 	}
 	
-	 public static void numeroMayor(int[] array1) {
-			int max,cont=0;
-			max=Integer.MIN_VALUE;
-		
-			for (int i = 0; i < array1.length; i++) {
-		
-			
-			
-				if (array1[i]>max) {
-					max= array1[i];
-				} 
-				
-				cont=cont+1;
-			}
-		
-			
-			
-			System.out.println(" el valor maximo es "+max);
-		} 
+	public static void numeroMayor(int[] array1) {
+		int max,cont=0;
+		max=Integer.MIN_VALUE;
+
+		for (int i = 0; i < array1.length; i++) {
+
+			if (array1[i]>max) {
+				max= array1[i];
+			} 
+
+			cont=cont+1;
+		}
+
+		System.out.println(" el valor maximo es "+max +" y se repite "+cont+"veces");
+	} 
 	 
 	 
 	public static void contadorPositivosNegativosCeros(int[] array1) {
