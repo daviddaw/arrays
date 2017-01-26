@@ -1,6 +1,6 @@
 package Ejercicio1;
 
-public class Ejemplo1 {
+public class Ejemplo01 {
 
 	public static void main(String[] args) {
 		int [] ar1=new int[5];

@@ -2,11 +2,11 @@ package Ejercicio1;
 
 
 
-public class ejercicio2 {
+public class ejercicio02 {
 
 	public static void main(String[] args) {
 		int[] array1 = new int [10];
-		Ejercicio1.crearArray(array1);
+		Ejercicio01.crearArray(array1);
 		visualizarArray(array1);
 		sumarPosiciones(array1);
 		contadorPositivosNegativosCeros(array1);
