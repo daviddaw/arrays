@@ -3,8 +3,9 @@ package Ejercicio1;
 public class Ejercicio3 {
 
 	public static void main(String[] args) {
+		int n;
 		System.out.println("introduce un numero");
-		nuemero=LeerTeclado.readInteger():
+		n=LeerTeclado.readInteger();
 		while (n>=0 && n<=10) 
 		{
 			
