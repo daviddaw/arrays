@@ -3,15 +3,26 @@ package ejercicios;
 public class Ejercicio03 {
 
 	public static void main(String[] args) {
-		int n;
-		System.out.println("introduce un numero");
-		n=LeerTeclado.readInteger();
-		while (n>=0 && n<=10) 
+		int  arrayNotas [] = {0,0,0,0,0,0,0,0,0,0,0};
+		int nota;
+		System.out.println("introduce una nota");
+		nota=LeerTeclado.readInteger();
+		while (nota>=0 && nota<=10) 
 		{
-			
+			arrayNotas[nota]=arrayNotas[nota]+1;
+			System.out.println("Introduce una nota: ");
+			nota=LeerTeclado.readInteger();
 			
 		}
+	 	visualizarArray(arrayNotas);
+	 	
 
+	}
+	public static void visualizarArray(int[] array) {
+		for (int i = 0; i < array.length; i++) {
+			System.out.println("La nota "+i+" se repite "+array[i]+" veces.");
+		}
+		System.out.println();
 	}
 
 }
