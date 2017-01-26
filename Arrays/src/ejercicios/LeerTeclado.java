@@ -1,4 +1,4 @@
-package Ejercicio1;
+package ejercicios;
 
 
 // Clase para la gestion de entrada por teclado
