@@ -1,6 +1,6 @@
 package ejercicios;
 
-import ejerc.LeerTeclado;
+
 
 public class Ejercicio08 {
 
