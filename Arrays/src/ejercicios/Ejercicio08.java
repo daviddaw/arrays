@@ -1,5 +1,8 @@
-package ejerc;
-public class Ejercicio8 {
+package ejercicios;
+
+import ejerc.LeerTeclado;
+
+public class Ejercicio08 {
 
 	public static void main(String[] args) {
 
@@ -81,5 +84,6 @@ public class Ejercicio8 {
 		} else
 			return false;
 	}
+
 
 }
