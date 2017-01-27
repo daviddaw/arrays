@@ -1,6 +1,7 @@
-package Ejercicio10;
+package ejerc;
 
-public class Ejer10 {
+
+public class Ejercicio7 {
 
 	public static void main(String[] args) {
 		

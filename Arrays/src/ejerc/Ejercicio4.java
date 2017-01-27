@@ -1,8 +1,5 @@
-package Ejercicio4;
-
-import ejercicios.LeerTeclado;
-
-public class Eje4 {
+package ejerc;
+public class Ejercicio4 {
 
 
 		public static void main(String[] args) {

@@ -1,8 +1,5 @@
-package Ejercicio8;
-
-import ejercicios.LeerTeclado;
-
-public class Eje8 {
+package ejerc;
+public class Ejercicio5 {
 
 	
 	public static void main(String[] args) {
@@ -24,7 +21,7 @@ public class Eje8 {
 		
 		System.out.println("");
 		
-		//contenido
+	
 		cifraContenida(array1, n);
 	}
 

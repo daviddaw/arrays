@@ -1,7 +1,5 @@
-package Ejercicio9;
-
-
-public class Eje9 {
+package ejerc;
+public class Ejercicio6 {
 
 	public static void main(String[] args) {
 		
@@ -25,7 +23,7 @@ public class Eje9 {
 		int [] arrayimp=new int [contadorImpares(array1)];
 		int [] arratpar=new int [contadorPares(array1)];
 		
-		//Rellenamos y visualizamos el array de impares y el de pares
+		
 		rellenarPareseImpares(array1, arratpar, arrayimp);
 		System.out.println("");
 		System.out.println("Array de Impares");

@@ -1,8 +1,5 @@
-package Ejercicio3;
-
-import ejercicios.LeerTeclado;
-
-public class Eje3 {
+package ejerc;
+public class Ejercicio3 {
 
 	
 	public static void main(String[] args) {
@@ -13,7 +10,7 @@ public class Eje3 {
 		
 		mostrarArray(arrayNotas);
 	
-		//FALLA EN LA REPRODUCCIÓN DEL ARRAY. EN VEZ DE SUMAR 1, SUMA 11
+	
 		
 	}
 
@@ -27,8 +24,7 @@ public class Eje3 {
 	}
 	
 	
-	public static void introducirContarNotas (int [] a)
-	{
+	public static void introducirContarNotas (int [] a){
 		
 		System.out.println("Introduce nota: ");
 		int nota=LeerTeclado.readInteger();
