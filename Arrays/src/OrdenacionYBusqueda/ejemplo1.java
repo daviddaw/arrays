@@ -2,10 +2,10 @@ package OrdenacionYBusqueda;
 
 import Simples.LeerTeclado;
 
-public class Ejercicio1 {
+public class ejemplo1 {
 
 	public static void main(String[] args) {
-		final int LONGITUD=100;
+		final int LONGITUD=5;
 		int [] array=new int[LONGITUD];
 		int aux;
 		System.out.println("introduce las componentes");
