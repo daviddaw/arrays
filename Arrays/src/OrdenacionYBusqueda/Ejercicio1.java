@@ -13,12 +13,12 @@ public class Ejercicio1 {
 		for ( int i=0; i<array.length; i++){
 			array[i]=(int)(Math.random() * 100 +1) ;
 		}
-
+        
 		//Imprime array desordenado
 		System.out.println("El array desordenado es: ");
 		for(int i=0;i<array.length;i++)
 		{
-			System.out.print(array[i]);
+			System.out.print(array[i]+" ");
 			
 		}
 		//ordena el array
@@ -36,9 +36,13 @@ public class Ejercicio1 {
 		for (int i = 0; i < array.length; i++) 
 		{//syso ("componente"+i);
 			
-			System.out.print(array[i]);
+			System.out.print(array[i]+" ");
 		}
 
+		do {
+			
+		} while (n>1||n<100);
+		
 	}
 
 
