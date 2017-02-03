@@ -39,9 +39,9 @@ public class Ejercicio1 {
 			System.out.print(array[i]+" ");
 		}
 
-		do {
+	//	do {
 			
-		} while (n>1||n<100);
+	//	} while (n>1||n<100);
 		
 	}
 
