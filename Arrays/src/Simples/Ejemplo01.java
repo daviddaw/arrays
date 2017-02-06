@@ -10,6 +10,7 @@ public class Ejemplo01 {
 		
 		//rellenamos el array con datos (números pares)
 		for (int i=0; i<ar1.length; i++){
+			System.out.println("hola");
 			ar1[i]=i*2;
 		}
 		//podemos visualizar el array así:
@@ -34,13 +35,16 @@ public class Ejemplo01 {
 	public static void inicArray (int[] array){
 		
 		for (int i = 0; i < array.length; i++) {
+			
 			array[i]=i;
+			
 		}
 	}
 	
 	public static void verArray( int[] array){
 		for (int i = 0; i < array.length; i++) {
 			System.out.print(array[i]+" ");
+			
 		}
 		System.out.println();
 	}

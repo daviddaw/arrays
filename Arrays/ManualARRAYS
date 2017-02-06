@@ -2,8 +2,14 @@ http://doruko.blogspot.com.es/2012/11/java-matriz-de-2-dimensiones-suma-de.html
 
 Como se Declara un array??
 	-solo declaracion
- 		int [] Array1 = new int [5];
-      
+ 		int [] ar1=new int[5];
+		int [] ar2;
+		ar2=new int[5];	
+ 	-Opcion2
+ 		final int LONGITUD=5;                     //declaracion variable int
+		int [] array=new int[LONGITUD];           //Declaracion Array que tendra 5 posiciones de  enteros
+	-ejemplo 2
+		int [] Array1 = new int [5]; //repetido con diferente nombre 
 Como se inicia un array??
 	-Iniciar array en la declaracion
           String Array2= {"Avila","Leon","Palencia","Salamanca","Segovia"}
@@ -17,8 +23,7 @@ Como se  inicia un array con valores fijos?
         String array1[4]= "Segovia";
         
      
-		final int LONGITUD=5;                     //declaracion variable int
-		int [] array=new int[LONGITUD];           //Declaracion Array que tendra 5 posiciones de  entero
+
 Como se  inicia un array con valores Por teclado?   		
 	-Valores por teclado
 		System.out.println("introduce las componentes");
@@ -31,3 +36,28 @@ Como se  inicia un array con valores Aleatorios?
     			for ( int i=0; i<array.length; i++){
 						array[i]=(int)(Math.random() * 50 +1) ;   //inicia desde el 1(+1) hasta el 50
 				}
+				
+Como se autorellena un array ?
+   	-Array autorrenenable de 1 en 1	
+   				for (int i = 0; i < array.length; i++) {
+					   array[i]=i;}
+   			
+	-Array autorrenenable de 2 en 2
+				for (int i=0; i<ar1.length; i++){
+						ar1[i]=i*2;
+		}
+
+				
+				
+
+Como se visualiza un array??
+	-Visualizacion array
+				for (int i = 0; i < array.length; i++) {
+						System.out.print(array[i]+ " ");
+		}
+		
+Como se suman dos Arrays??
+	-Suma de arrays
+				int[] suma=new int[array1.length];
+		        for (int i = 0; i < array1.length; i++) {
+			           suma[i]=array1[i]+array2[i];		
