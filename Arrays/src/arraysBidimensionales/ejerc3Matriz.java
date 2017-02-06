@@ -6,11 +6,14 @@ public class ejerc3Matriz {
 		public static void main(String[] args) {
 			
 			int matriz[][]= new int [10][10];
+			int sumFilas;
+			int sumColumnas;
 			
 			for (int i=0; i<matriz.length;i++ ){
 				for(int j=0;j<matriz[i].length;j++){
 					matriz[i][j]=(int)(Math.random() * 9 +1) ;
 					//matriz[i][j]=i+j; ESto solo sumaria posiciones
+					
 					
 				}
 				
@@ -22,6 +25,14 @@ public class ejerc3Matriz {
 					System.out.print(matriz[i][j]+" ");
 				}
 			}
+			for (int i = 0; i < matriz[0].length; i++) {  
+				 sumColumnas=0;  
+				 for (int j = 0; j < matriz.length; j++) {  
+				      sumColumnas=sumColumnas+matriz[j][i];  
+			        }  
+			        System.out.println("La suma de los valores de la columna "+(i+1)+" es: "+sumColumnas);  
+				      }  
+				     System.out.println("");
 			
 		}
 
