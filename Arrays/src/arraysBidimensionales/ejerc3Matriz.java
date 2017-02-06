@@ -25,14 +25,27 @@ public class ejerc3Matriz {
 					System.out.print(matriz[i][j]+" ");
 				}
 			}
+			System.out.println("");
+			//Suma columnas  
+			System.out.println("");
 			for (int i = 0; i < matriz[0].length; i++) {  
 				 sumColumnas=0;  
 				 for (int j = 0; j < matriz.length; j++) {  
 				      sumColumnas=sumColumnas+matriz[j][i];  
-			        }  
-			        System.out.println("La suma de los valores de la columna "+(i+1)+" es: "+sumColumnas);  
+			          }  
+			          System.out.println("La suma de los valores de la columna "+(i+1)+" es: "+sumColumnas);  
 				      }  
-				     System.out.println("");
+				      System.out.println("");
+				     
+				      //Suma filas  
+		    for (int i = 0; i < matriz.length; i++) {  
+				 sumFilas=0;  
+				 for (int j = 0; j < matriz[i].length; j++) {  
+				      sumFilas=sumFilas+matriz[i][j];  
+				        }  
+				        System.out.println("La suma de los valores de la fila "+(i+1)+" es:    "+sumFilas);  
+				        }  
+				        System.out.println("");	     
 			
 		}
 
