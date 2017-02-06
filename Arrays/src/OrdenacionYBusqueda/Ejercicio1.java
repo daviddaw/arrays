@@ -8,6 +8,7 @@ public class Ejercicio1 {
 		final int LONGITUD=30;
 		int [] array=new int[LONGITUD];
 		int aux;
+		int n;
 		System.out.println("introduce las componentes");
 
 		for ( int i=0; i<array.length; i++){
@@ -39,10 +40,10 @@ public class Ejercicio1 {
 			System.out.print(array[i]+" ");
 		}
 
-	//	do {
+	/*do {
 			
-	//	} while (n>1||n<100);
-		
+		} while (n>1||n<100);
+	*/	
 	}
 
 
