@@ -1,0 +1,33 @@
+http://doruko.blogspot.com.es/2012/11/java-matriz-de-2-dimensiones-suma-de.html
+
+Como se Declara un array??
+	-solo declaracion
+ 		int [] Array1 = new int [5];
+      
+Como se inicia un array??
+	-Iniciar array en la declaracion
+          String Array2= {"Avila","Leon","Palencia","Salamanca","Segovia"}
+          
+Como se  inicia un array con valores fijos?         
+	-Valores fijos
+   		String array1[0]= "Avila";
+        String array1[1]= "Leon";
+        String array1[2]= "Palencia";
+        String array1[3]= "Salamanca";
+        String array1[4]= "Segovia";
+        
+     
+		final int LONGITUD=5;                     //declaracion variable int
+		int [] array=new int[LONGITUD];           //Declaracion Array que tendra 5 posiciones de  entero
+Como se  inicia un array con valores Por teclado?   		
+	-Valores por teclado
+		System.out.println("introduce las componentes");
+			for (int i=0; i<array.length;i++)         //pedira 5 datos desde la posicion 0 hasta array.length(4) y avanzara de uno en uno
+				array[i]=LeerTeclado.readInteger();   //insertaremosun dato en  cada posicion
+	
+	
+Como se  inicia un array con valores Aleatorios?   	
+	-Valores aleatorios
+    			for ( int i=0; i<array.length; i++){
+						array[i]=(int)(Math.random() * 50 +1) ;   //inicia desde el 1(+1) hasta el 50
+				}
