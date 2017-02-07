@@ -1,11 +1,9 @@
 package Simples;
-
-
-
 public class ejercicio02 {
 
 	public static void main(String[] args) {
 		int[] array1 = new int [10];
+		//cargar array desde teclado con enteros
 		Ejercicio01.crearArray(array1);
 		visualizarArray(array1);
 		sumarPosiciones(array1);
@@ -66,7 +64,7 @@ public class ejercicio02 {
 	}
 	
 	public static void visualizarArray (int[] array){
-		
+		//Visualizar posiciones con contenido menor a 17
 		for (int i = 0; i < array.length; i++) {
 			if (array[i]<17) {
 				System.out.print(array[i]+" ");
