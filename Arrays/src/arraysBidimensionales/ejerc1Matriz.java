@@ -13,9 +13,9 @@ public class ejerc1Matriz {
 			}
 			
 		}
-		
+		//visualizar ARRAY BIDIMENSIONAL
 		for (int i=0; i<matriz.length;i++ ){
-			System.out.println();//fijarse
+			System.out.println();//
 			for(int j=0;j<matriz[i].length;j++){
 				System.out.print(matriz[i][j]+" ");
 			}
