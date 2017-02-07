@@ -5,14 +5,14 @@ public class ejerc3Matriz {
 
 		public static void main(String[] args) {
 			
-			int matriz[][]= new int [10][10];
+			int matriz[][]= new int [2][2];
 			int sumFilas;
 			int sumColumnas;
 			
 			for (int i=0; i<matriz.length;i++ ){
 				for(int j=0;j<matriz[i].length;j++){
-					matriz[i][j]=(int)(Math.random() * 9 +1) ;
-					//matriz[i][j]=i+j; ESto solo sumaria posiciones
+				matriz[i][j]=(int)(Math.random() * 9 +1) ;
+				//matriz[i][j]=i+j; ESto solo sumaria posiciones
 					
 					
 				}
@@ -37,15 +37,15 @@ public class ejerc3Matriz {
 				      }  
 				      System.out.println("");
 				     
-				      //Suma filas  
+		    //Suma filas  
 		    for (int i = 0; i < matriz.length; i++) {  
 				 sumFilas=0;  
 				 for (int j = 0; j < matriz[i].length; j++) {  
 				      sumFilas=sumFilas+matriz[i][j];  
-				        }  
-				        System.out.println("La suma de los valores de la fila "+(i+1)+" es:    "+sumFilas);  
-				        }  
-				        System.out.println("");	     
+				      }  
+				      System.out.println("La suma de los valores de la fila "+(i+1)+" es:    "+sumFilas);  
+				      }  
+				      System.out.println("");	     
 			
 		}
 
