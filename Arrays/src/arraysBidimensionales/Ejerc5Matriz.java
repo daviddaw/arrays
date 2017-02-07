@@ -21,7 +21,8 @@ public class Ejerc5Matriz {
 
 
 		//solo imprime
-		int max,cont=0;
+		int max,cont=0,media=0;
+		
 		max=Integer.MIN_VALUE;
 		
 		for (int i=0; i<matriz.length;i++ )
@@ -32,10 +33,12 @@ public class Ejerc5Matriz {
 					if (matriz[i][j]>max) 
 					{
 						max= matriz[i][j];
-					} 
+					}
+					matriz[i][j]=;
+					
 		}
 		}
-				System.out.println(" \nLa nota maxima es "+max);
+				System.out.println(" \nLa nota maxima es "+max+ " y la media es "+cont);
 		
 	
 		
