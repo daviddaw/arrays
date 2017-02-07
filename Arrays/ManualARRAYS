@@ -52,17 +52,74 @@ Como se autorellena un array ?
 
 Como se visualiza un array??
 	-Visualizacion array
-				for (int i = 0; i < array.length; i++) {
+				for (int i = 0; i < array.length; i++)
+					 {
 						System.out.print(array[i]+ " ");
-		}
+				   	}
 		
 Como se suman dos Arrays??
 	-Suma de arrays
 				int[] suma=new int[array1.length];
-		        for (int i = 0; i < array1.length; i++) {
+		        for (int i = 0; i < array1.length; i++) 	
+		        	{
 			           suma[i]=array1[i]+array2[i];		//seria la multiplicacion asi -> producto[i]=array1[i]*array2[i];
-			           
+			        }   
 			           
 Como se llaman arrays con metodos??
 	-Llamar a metodos con arrays
 	     Arrays>Simples>Ejercicio1
+	     
+	     
+	     
+Como se visualizan las posiciones de los arrays?
+	-Posiciones de los arrays
+			//Visualizar posiciones con contenido menor a 17
+				for (int i = 0; i < array.length; i++) 
+					{
+					if (array[i]<17) {
+					System.out.print(array[i]+" ");
+					}
+	     
+Como se suman los valores decada posicion?	     
+	-Suma de valores Array
+			int acumulador=0;
+			for (int i = 0; i < array.length; i++) 
+			{
+			acumulador=acumulador+array[i];
+			
+			}
+		System.out.println(" ");
+		System.out.println("la suma de todas las posiciones del array es "+ acumulador);
+	
+
+Como se sacan los positivos negativos o ceros en un array?
+	-positivos,negativos o ceros en un array.	
+			int contPositivos=0,contNegativos=0,contceros=0;
+		
+		for (int i = 0; i < array1.length; i++) {
+			if (array1[i]<0) {	
+				contNegativos++;         //Si el numero es negativo se añadira uno al contador
+			} else {
+				if (array1[i]>0) {
+					contPositivos++;     //Si el numero es positivo se añadira uno al contador
+				} else {
+					contceros++;         //Si no es positivo ninegativo se añadira al cero
+				}
+
+			}
+Como se saca el valor maximo de un array y cuantas veces se repite?
+	-valor maximo del array y veces que se repite
+			int max,cont=0;
+		max=Integer.MIN_VALUE;
+
+		for (int i = 0; i < array1.length; i++)
+		 {
+			if (array1[i]>max) 
+			 { 
+				max= array1[i];
+		     } 
+		cont=cont+1;
+		 }
+
+		System.out.println(" el valor maximo es "+max +" y se repite "+cont+"veces");
+	
