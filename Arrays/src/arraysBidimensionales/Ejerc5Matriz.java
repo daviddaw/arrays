@@ -7,6 +7,39 @@ public class Ejerc5Matriz {
 		int Alumnos;
 		int Notas;
 
+		for (int i=0; i<matriz.length;i++ ){
+			for(int j=0;j<matriz[i].length;j++){
+			matriz[i][j]=(int)(Math.random() * 9 +1) ;
+			//matriz[i][j]=i+j; ESto solo sumaria posiciones
+				
+				
+			}
+			
+		}
+		
+		
+
+
+		//solo imprime
+		int max,cont=0;
+		max=Integer.MIN_VALUE;
+		
+		for (int i=0; i<matriz.length;i++ )
+		{
+		System.out.println();
+			for(int j=0;j<matriz[i].length;j++){
+				System.out.print(matriz[i][j]+" ");
+					if (matriz[i][j]>max) 
+					{
+						max= matriz[i][j];
+					} 
+		}
+		}
+				System.out.println(" \nLa nota maxima es "+max);
+		
+	
+		
+	}
 	}
 
-}
+
