@@ -3,20 +3,8 @@ package arraysBidimensionales;
 public class Ejerc5Matriz {
 
 	public static void main(String[] args) {
-		int matriz[][]= new int [30][5];
-		int Alumnos;
-		int Notas;
-
-		for (int i=0; i<matriz.length;i++ ){
-			for(int j=0;j<matriz[i].length;j++){
-			matriz[i][j]=(int)(Math.random() * 9 +1) ;
-			//matriz[i][j]=i+j; ESto solo sumaria posiciones
-				
-				
-			}
-			
-		}
 		
+<<<<<<< HEAD
 		
 
 
@@ -28,7 +16,13 @@ public class Ejerc5Matriz {
 		
 		for (int i=0; i<matriz.length;i++ )
 		{
+=======
+		rellenarMatriz(array1);
+		visualizarMatriz(array1);
+		operacionesFila(array1);
+>>>>>>> branch 'master' of https://github.com/daviddaw/arrays.git
 		System.out.println();
+<<<<<<< HEAD
 			for(int j=0;j<matriz[i].length;j++){
 				System.out.print(matriz[i][j]+" ");
 					if (matriz[i][j]>max) 
@@ -42,9 +36,23 @@ public class Ejerc5Matriz {
 		}
 				System.out.println(" \nLa nota maxima es "+max+ " y la media es "+media);
 		
+=======
+		operacionesColumna(array1);
+
+	}
+
+public static void rellenarMatriz(int [][]array){
+>>>>>>> branch 'master' of https://github.com/daviddaw/arrays.git
 	
-		
-	}
-	}
+}
+public static void visualizarMatriz(int [][]array){
+	
+}
+public static void operacionesFila(int [][]array){
+	
+}
+public static void operacionescolumna(int [][]array){
+	
+}
 
-
+}
