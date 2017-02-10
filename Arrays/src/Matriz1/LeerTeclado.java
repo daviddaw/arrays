@@ -1,4 +1,4 @@
-package fer_Matriz;
+package Matriz1;
 import java.io.* ;
 /**
  *  Clase que permite leer valores simples de la linea de comandos.

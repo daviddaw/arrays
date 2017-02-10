@@ -1,4 +1,4 @@
-package fer_Matriz;
+package Matriz1;
 
 public class Ejercicio4 {
 
