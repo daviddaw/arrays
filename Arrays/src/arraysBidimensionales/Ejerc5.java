@@ -26,11 +26,6 @@ public class Ejerc5 {
 
 		for (int i=0; i<matriz.length;i++ )
 		{
-			
-			
-			
-			
-			
 			System.out.println();
 			suma=0;
 			for(int j=0;j<matriz[i].length;j++){
