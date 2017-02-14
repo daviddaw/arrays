@@ -1,6 +1,6 @@
 package arraysObjetos.ejercicio1;
 
-public class Alumnos {
+public class Alumno {
 private String nombre ;
 private double nota ;
 public String getNombre() {
@@ -15,11 +15,11 @@ public double getNota() {
 public void setNota(double nota) {
 	this.nota = nota;
 }
-public Alumnos(String nombre, double nota) {
+public Alumno(String nombre, double nota) {
 	this.nombre = nombre;
 	this.nota = nota;
 }
-public Alumnos() {
+public Alumno() {
 	
 }
 @Override
