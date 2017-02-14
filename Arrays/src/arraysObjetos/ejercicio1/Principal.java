@@ -14,8 +14,7 @@ public class Principal {
 	public static void rellenarAlumnos(Alumno[] arrAlumnos) {
 		for (int i = 0; i < arrAlumnos.length; i++) {
 			// arrAlumnos[i]=new Alumnos("alumno"+(i+1),Math.random()*10+0 );
-			arrAlumnos[i] = new Alumno(LeerTeclado.readString(),
-					LeerTeclado.readDouble());
+			arrAlumnos[i] = new Alumno(LeerTeclado.readString(),LeerTeclado.readDouble());
 
 		}
 
