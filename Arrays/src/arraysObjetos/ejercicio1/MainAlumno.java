@@ -11,7 +11,9 @@ public class MainAlumno {
 			System.out.println("1 Buscar un alumno");
 			System.out.println("2 mostrar Aprobados y suspensos");
 			System.out.println("3 Ordenar Alfabeticamente");
-			System.out.println("4 Salir");
+			System.out.println("4 dado alumno nota");
+			System.out.println("5 dada nota los alumnos con igual o superior nota");
+			System.out.println("6  Salir");
 			opcion=LeerTeclado.readInteger();
 			switch (opcion) {
 			case 1:
