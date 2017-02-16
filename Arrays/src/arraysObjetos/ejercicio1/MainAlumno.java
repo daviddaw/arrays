@@ -10,7 +10,7 @@ public class MainAlumno {
 		do {
 			System.out.println("1 Buscar un alumno");
 			System.out.println("2 mostrar Aprobados y suspensos");
-			System.out.println("3 Ordenar Alfabeticamente");
+			System.out.println("3 Ordenar Alfabeticamente ");
 			System.out.println("4 Salir");
 			opcion=LeerTeclado.readInteger();
 		} while ((opcion<1)||(opcion>4));
