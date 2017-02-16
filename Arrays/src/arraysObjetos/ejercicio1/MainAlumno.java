@@ -13,10 +13,28 @@ public class MainAlumno {
 			System.out.println("3 Ordenar Alfabeticamente ");
 			System.out.println("4 Salir");
 			opcion=LeerTeclado.readInteger();
+			switch (opcion) {
+			case 1:
+				buscarNombre(arrayAlumnos);;;
+				break;
+			case 2:
+				aprobadosuspenso(arrayAlumnos);
+				break;
+			case 3:
+					ordenarAlfabeticamente(arrayAlumnos);
+					visualizar(arrayAlumnos);
+				break;
+			case 4:
+
+				break;
+
+			default:
+				break;
+			}
 		} while ((opcion<1)||(opcion>4));
 		
-		visualizar(arrayAlumnos);
-		buscarNombre(arrayAlumnos);
+	
+		
 		ordenarAlfabeticamente(arrayAlumnos);
 
 	}
@@ -28,16 +46,59 @@ public class MainAlumno {
 			} else {
 				array[i] = new Alumno("Alumno" + (i + 1),
 						Math.random() * 10 + 0);
-				// dos for
+				
 			}
 
 		}
+		array[00]=new Alumno("Alberto",Math.random() * 10 + 0);
+		array[17]=new Alumno("Raul",Math.random() * 10 + 0);
+		array[29]=new Alumno("Miguel",Math.random() * 10 + 0);
+		
 	}
 	
+	static void aprobadosuspenso(Alumno[] arrayAlumno) {
+		int cAprobado=0;
+		int cSuspenso=0;
+		int media=0;
+		for (int i = 0; i < arrayAlumno.length; i++) {
+			
+			if (arrayAlumno[i].getNota() < 5) {
+				System.out.println(arrayAlumno[i].toString()+"Suspendido");
+				cSuspenso++;
+			} 
+			else {
+				System.out.println(arrayAlumno[i].toString()+"aprobado");
+				cAprobado++;
+			}
+		}
+		System.out.println("Hay "+cAprobado+" aprobados y "+cSuspenso+" suspensos, la media de la clase es "+media+".");
+	}
+	private static void ordenarAlfabeticamente(Alumno[] array) {
+		Alumno aux;
+		for (int i = 0; i < array.length-1; i++) {
+			
+			
+			for (int j = i + 1; j < array.length; j++) {
+				
+				/*
+				 * para comparar String se usan el método compareTo() que
+				 * devuelve 0 si son iguales, -1 si es menor o 1 si es mayor
+				 */
+				
+				if (array[i].getNombre().compareTo(array[j].getNombre()) > 0) {
+					
+					aux = array[i];
+					array[i] = array[j];
+					array[j] = aux;
+				}
 
-	private static void ordenarAlfabeticamente(Alumno[] arrayAlumnos) {
-		
-		
+			}
+
+			
+			
+			
+			
+		}
 	}
 
 	private static void buscarNombre(Alumno[] buscarNombres) {
@@ -52,22 +113,15 @@ public class MainAlumno {
 		}
 		
 	}
+	public static void visualizar(Alumno[] x) {
+		for (int i = 0; i < x.length; i++) {
+			System.out.println(x[i].toString());
+		}
 
+	}
 
 		
 
 
-	static void visualizar(Alumno[] arrayAlumno) {
-		for (int i = 0; i < arrayAlumno.length; i++) {
-			System.out.println(arrayAlumno[i].toString());
-			if (arrayAlumno[i].getNota() < 5) {
-				System.out.println("Suspendido");
-			} else {
-				System.out.println("aprobado");
-			}
-			System.out.println();
 
-		}
-
-	}
 }
