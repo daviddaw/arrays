@@ -3,12 +3,15 @@ package arraysObjetos.ejercicio4;
 public class Carta {
 	private String palo;
 	private String nombre;
-	private int valor;
+	private double valor;
 	
-	public Carta(String palo, String nombre, int valor) {
+	public Carta(String palo, String nombre, double valor) {
 		this.palo = palo;
 		this.nombre = nombre;
 		this.valor = valor;
+	}
+public Carta(String palo) {
+		
 	}
 	public Carta() {
 		
@@ -26,10 +29,10 @@ public class Carta {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public int getValor() {
+	public double getValor() {
 		return valor;
 	}
-	public void setValor(int valor) {
+	public void setValor(double valor) {
 		this.valor = valor;
 	}
 	@Override
