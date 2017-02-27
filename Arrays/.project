@@ -14,4 +14,11 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/String/EJERCICIOS_DE_CADENAS.doc</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Downloads/EJERCICIOS_DE_CADENAS.doc</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>
