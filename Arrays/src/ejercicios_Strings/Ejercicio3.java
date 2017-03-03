@@ -15,7 +15,7 @@ public class Ejercicio3 {
 		System.out.println("El caracter se encuentra en la posicion "
 				+ cadena.indexOf(caracter));
 
-		System.out.println("_______________");
+		System.out.println("_________________________________________");
  	/*b.	Escribir un método que busque todas las ocurrencias del carácter en la cadena en caso de encontrarse en ella, 
  	 * o indicando mediante un mensaje que dicho carácter no se encuentra dentro de la cadena.
 		•	Ejemplo: “hola ana belen”    carácter: a  => se encuentra en la posición 3, 5, 7*/
