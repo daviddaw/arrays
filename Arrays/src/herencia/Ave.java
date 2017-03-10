@@ -8,17 +8,16 @@ public Ave() {
 	super();
 }
 
-public Ave(int numeroHuevos, boolean volar) {
-	super();
+
+
+public Ave(String nombreComun, String nombreEspecifico, double peso,
+		double tamaño, int numeroHuevos, boolean volar) {
+	super(nombreComun, nombreEspecifico, peso, tamaño);
 	this.numeroHuevos = numeroHuevos;
 	this.volar = volar;
 }
 
-public Ave(String nombreComun, String nombreEspecifico, double peso,
-		double tamaño) {
-	super(nombreComun, nombreEspecifico, peso, tamaño);
-	// TODO Auto-generated constructor stub
-}
+
 
 public int getNumeroHuevos() {
 	return numeroHuevos;
@@ -38,7 +37,7 @@ public void setVolar(boolean volar) {
 
 @Override
 public String toString() {
-	return "Ave [numeroHuevos=" + numeroHuevos + ", volar=" + volar + "]";
+	return super.toString()+"Ave [numeroHuevos=" + numeroHuevos + ", volar=" + volar + "]";
 }
 
 

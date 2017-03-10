@@ -7,26 +7,36 @@ package herencia;
 public class Mamifero  extends Animal{
 	private int numeroCrias;
 	private int mesesEmbarazo;
-	
-	
+
 	public Mamifero() {
 		super();
-		// TODO Auto-generated constructor stub
+	
 	}
 	
-	public Mamifero(int numeroCrias, int numeroEmpleados) {
-		super();
-		this.numeroCrias = numeroCrias;
-		this.mesesEmbarazo = numeroEmpleados;
-	}
 	
-
-
+	
+	
 	public Mamifero(String nombreComun, String nombreEspecifico, double peso,
-			double tamaño) {
+			double tamaño, int numeroCrias, int mesesEmbarazo) {
 		super(nombreComun, nombreEspecifico, peso, tamaño);
-		// TODO Auto-generated constructor stub
+		this.numeroCrias = numeroCrias;
+		this.mesesEmbarazo = mesesEmbarazo;
 	}
+
+
+	public int getMesesEmbarazo() {
+		return mesesEmbarazo;
+	}
+
+
+
+
+	public void setMesesEmbarazo(int mesesEmbarazo) {
+		this.mesesEmbarazo = mesesEmbarazo;
+	}
+
+
+
 
 	public int getNumeroCrias() {
 		return numeroCrias;
@@ -34,16 +44,18 @@ public class Mamifero  extends Animal{
 	public void setNumeroCrias(int numeroCrias) {
 		this.numeroCrias = numeroCrias;
 	}
-	public int getNumeroEmpleados() {
-		return mesesEmbarazo;
-	}
-	public void setNumeroEmpleados(int numeroEmpleados) {
-		this.mesesEmbarazo = numeroEmpleados;
-	}
+
+
+
+
 	@Override
 	public String toString() {
-		return "Mamifero [numeroCrias=" + numeroCrias + ", numeroEmpleados="
+		return super.toString()+ "Mamifero [numeroCrias=" + numeroCrias + ", mesesEmbarazo="
 				+ mesesEmbarazo + "]";
 	}
+
+
+
+
 	
 }

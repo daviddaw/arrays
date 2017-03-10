@@ -20,6 +20,7 @@ public class Animal {
 	public String getNombreComun() {
 		return nombreComun;
 	}
+	
 	public void setNombreComun(String nombreComun) {
 		this.nombreComun = nombreComun;
 	}
