@@ -47,7 +47,7 @@ public class Main {
 	Mamifero perro = new MamiferoTerrestre(nombreComun, nombreEspecifico, peso, tamaño, numeroCrias, mesesEmbarazo, numeroPatas);
 
 	Ave avestruz = new Ave(nombreComun, nombreEspecifico, peso, tamaño, numeroHuevos, volar);
-	+
+	
 	Ave paloma = new Ave(nombreComun, nombreEspecifico, peso, tamaño, numeroHuevos, volar);
 	
 	
