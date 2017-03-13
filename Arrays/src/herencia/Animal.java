@@ -1,5 +1,7 @@
 package herencia;
 
+import Simples.LeerTeclado;
+
 public class Animal {
 	//1)	Animal, que contiene los siguientes atributos: Nombre común, nombre específico, peso y tamaño.
 	private String nombreComun;
@@ -7,10 +9,18 @@ public class Animal {
 	private double peso;
 	private double tamaño;
 	public Animal() {
-		
+		System.out.println("Escribe nombre común");
+		nombreComun=LeerTeclado.readString();
+		System.out.println("Escribe nombre especifico");
+		nombreEspecifico=LeerTeclado.readString();
+		System.out.println("Escribe peso");
+		peso=LeerTeclado.readDouble();
+		System.out.println("Escribe tamaño");
+		tamaño=LeerTeclado.readDouble();
 	}
 	public Animal(String nombreComun, String nombreEspecifico, double peso,
 			double tamaño) {
+		
 		this.nombreComun = nombreComun;
 		this.nombreEspecifico = nombreEspecifico;
 		this.peso = peso;

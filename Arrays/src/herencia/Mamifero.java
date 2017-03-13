@@ -1,5 +1,7 @@
 package herencia;
 
+import Simples.LeerTeclado;
+
 /**
  * @author alumno
  *
@@ -10,6 +12,10 @@ public class Mamifero  extends Animal{
 
 	public Mamifero() {
 		super();
+		System.out.println("numero de crias");
+		int numeroCrias=LeerTeclado.readInteger();
+		System.out.println("Meses de embarazo");
+		int mesesEmbarazo=LeerTeclado.readInteger();
 	
 	}
 	

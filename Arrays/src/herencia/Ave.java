@@ -1,13 +1,30 @@
 package herencia;
 
+import Simples.LeerTeclado;
+
 public class Ave extends Animal{
 private int numeroHuevos;
 private boolean volar;
 
 public Ave() {
 	super();
+	int numeroHuevos=0;
+	System.out.println("Pone huevos?");
+	String resp = LeerTeclado.readString();
+	if (resp.equalsIgnoreCase("si")) {
+		System.out.println("Escribe el numero de huevos");
+		numeroHuevos = LeerTeclado.readInteger();
+	}
+		System.out.println("Puede volar?");
+		resp = LeerTeclado.readString();
+		
+		if (resp.compareToIgnoreCase("si")==0) {
+			volar = true;
+		} else {
+			volar = false;
+		}
+	
 }
-
 
 
 public Ave(String nombreComun, String nombreEspecifico, double peso,
