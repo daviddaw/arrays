@@ -1,4 +1,4 @@
-package herencia;
+package herenciaAnimal;
 
 import Simples.LeerTeclado;
 

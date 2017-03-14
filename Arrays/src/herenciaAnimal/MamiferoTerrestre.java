@@ -1,4 +1,4 @@
-package herencia;
+package herenciaAnimal;
 
 import Simples.LeerTeclado;
 
@@ -11,7 +11,7 @@ public class MamiferoTerrestre extends Mamifero{
 	public MamiferoTerrestre() {
 		super();
 		System.out.println("Escribe el numero de patas");
-		int numeroPatas = LeerTeclado.readInteger();
+		 numeroPatas = LeerTeclado.readInteger();
 	}
 	
 	

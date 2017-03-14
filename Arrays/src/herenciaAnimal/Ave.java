@@ -1,4 +1,4 @@
-package herencia;
+package herenciaAnimal;
 
 import Simples.LeerTeclado;
 
@@ -8,7 +8,7 @@ private boolean volar;
 
 public Ave() {
 	super();
-	int numeroHuevos=0;
+	numeroHuevos=0;
 	System.out.println("Pone huevos?");
 	String resp = LeerTeclado.readString();
 	if (resp.equalsIgnoreCase("si")) {
