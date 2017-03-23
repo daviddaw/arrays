@@ -1,6 +1,6 @@
 package herenciaVehiculos;
 
-public class  Coche extends Vehiculos{
+public class  Coche extends Vehiculo{
 	private String color;
 	private int numeroPasajeros;
 	private boolean descapotable;
@@ -32,6 +32,15 @@ public class  Coche extends Vehiculos{
 		this.descapotable = descapotable;
 	}
 
+    public void pintarCoche(String color) {
+		this.color=color;
+	}
+	@Override
+	public String toString() {
+		return super.toString()+"Coche [color=" + color + ", numeroPasajeros=" + numeroPasajeros
+				+ ", descapotable=" + descapotable + "]";
+	}
+	
 
 	
 	
