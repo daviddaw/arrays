@@ -1,6 +1,6 @@
 package herenciaVehiculos;
 
-public class vehiculos {
+public class Vehiculos {
 	/*
 	   2)	Para los camiones los atributos son: límite de carga (entero), carga (entero), conductor (String). Si la carga excede del límite, se tomará como carga dicho límite.
 	 * */
@@ -9,6 +9,16 @@ public class vehiculos {
 	private int numeroRuedas;
 	private int autonomía;
 	
+	
+	
+	public Vehiculos(String marca, String matricula, int numeroRuedas,
+			int autonomía) {
+		this.marca = marca;
+		this.matricula = matricula;
+		this.numeroRuedas = numeroRuedas;
+		this.autonomía = autonomía;
+	}
+
 	public static void main(String[] args) {
 		
 
