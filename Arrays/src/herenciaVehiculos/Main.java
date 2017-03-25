@@ -1,6 +1,5 @@
 package herenciaVehiculos;
 
-import ejercicios_Strings.LeerTeclado;
 
 public class Main {
     Vehiculo[] arrayVehiculos;
