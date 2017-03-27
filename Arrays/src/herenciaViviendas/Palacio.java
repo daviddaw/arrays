@@ -12,7 +12,7 @@ public class Palacio extends Vivienda{
 
 	public Palacio(int numeroHabitaciones, int metrosCuadrados, String calle,
 			int numero, boolean chofer) {
-		super(numeroHabitaciones, metrosCuadrados, calle, numero);
+		super(numeroHabitaciones=10, metrosCuadrados, calle, numero);
 		this.chofer = chofer;
 	}
 
