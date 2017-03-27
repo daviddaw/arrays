@@ -4,7 +4,7 @@ public abstract class Llamadas {
 	private int numeroOrigen;
 	private int numeroDestino;
 	private int duracion;
-
+//perro  
 
 	
 	public abstract double getCoste() ;
