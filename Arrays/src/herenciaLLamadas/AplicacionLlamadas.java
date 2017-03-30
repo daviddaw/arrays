@@ -1,7 +1,7 @@
 package herenciaLLamadas;
 
 public class AplicacionLlamadas {
-	//Porque aqui no va?
+
 	public static void main(String[] args) {
 		Centralita miCentralita= new Centralita();
 		Llamadas primeraLlamada =new LlamadasLocales(91, 91, 30);
@@ -11,7 +11,10 @@ public class AplicacionLlamadas {
 	    
 		miCentralita.informeLLamadas();
 		
+		
 
 	}
 
+	
+	
 }

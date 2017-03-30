@@ -1,5 +1,6 @@
+package coleccionEmpresa;
 
-public class Principal {
+public class Jefe {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
