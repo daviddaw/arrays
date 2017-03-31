@@ -1,6 +1,10 @@
 package coleccionEmpresa;
 
-public class ColeccionEmpleados {
+import java.util.*;
 
+
+
+public class ColeccionEmpleados {
+ Vector <Empleado> VectorEmpleados;
 	
 }
