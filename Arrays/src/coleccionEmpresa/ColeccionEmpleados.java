@@ -5,6 +5,11 @@ import java.util.*;
 
 
 public class ColeccionEmpleados {
- Vector <Empleado> VectorEmpleados;
+	
+ public ColeccionEmpleados() {
+	 Vector <Empleado> VectorEmpleados;
+	}
+
+
 	
 }
