@@ -1,5 +1,18 @@
 package excepciones3;
 
 public class Principal {
-EcuacionSegundoGrado name = new EcuacionSegundoGrado(4, 5, 7);
+
+	public static void main(String[] args)  {
+		EcuacionSegundoGrado e1= new EcuacionSegundoGrado(1, 12, 8);
+		EcuacionSegundoGrado e2= new EcuacionSegundoGrado(13, 12, 8);
+		try {
+			e1.solucion();
+			e2.solucion();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
 }

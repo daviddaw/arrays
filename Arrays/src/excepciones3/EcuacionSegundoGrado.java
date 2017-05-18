@@ -47,7 +47,7 @@ public class EcuacionSegundoGrado {
 					y1=(divisorP)/(dividendo);
 					
 					System.out.println(y1);
-					throw new Exception("La ecuación tiene una única raiz (x=c/b)");
+					/*throw new Exception("La ecuación tiene una única raiz (x=c/b)");*/
 				}
 				else {
 					if (discriminante>0) {//si es mayor que cero tiene dos soluciones. (2,7,3)
