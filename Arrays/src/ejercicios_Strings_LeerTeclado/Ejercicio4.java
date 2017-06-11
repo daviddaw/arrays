@@ -1,4 +1,4 @@
-package ejercicios_Strings;
+package ejercicios_Strings_LeerTeclado;
 /*4.	Dada una cadena por teclado, escribir un método que obtenga otra cadena eliminando las vocales.*/
 public class Ejercicio4 {
 	//StringBuffer deleteCharAt(int pos): devuelve el StringBuffer eliminando el carácter que está en la posición pos

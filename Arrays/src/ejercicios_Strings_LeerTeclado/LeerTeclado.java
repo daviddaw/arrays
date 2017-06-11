@@ -1,4 +1,4 @@
-package ejercicios_Strings;
+package ejercicios_Strings_LeerTeclado;
 
 
 // Clase para la gestion de entrada por teclado

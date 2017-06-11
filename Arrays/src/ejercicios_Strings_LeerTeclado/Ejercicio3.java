@@ -1,4 +1,4 @@
-package ejercicios_Strings;
+package ejercicios_Strings_LeerTeclado;
 /*3.	Dadas por teclado una cadena y una variable carácter, se pide:
 a.	Escribir un método que busque dentro de la cadena la primera ocurrencia del carácter introducido empezando por el principio, 
 indicando la posición que ocupa dentro de la cadena en caso de encontrarse en ella, 

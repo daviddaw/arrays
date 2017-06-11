@@ -1,4 +1,4 @@
-package ejercicios_Strings;
+package ejercicios_Strings_LeerTeclado;
 
 public class ejercicio2 {
 

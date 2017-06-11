@@ -1,6 +1,6 @@
 package excepciones;
 
-import ejercicios_Strings.LeerTeclado;
+import ejercicios_Strings_LeerTeclado.LeerTeclado;
 
 public class Suma {
 

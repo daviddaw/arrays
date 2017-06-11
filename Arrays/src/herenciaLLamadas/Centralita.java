@@ -6,8 +6,9 @@ public class Centralita {
 	public Centralita() {
 		  arrayLlamadas=new Llamadas[5];
 	
-		  
+	/*	  
 	arrayLlamadas[0]= LlamadasLocales.primeraLlamada;
+	*/
 	}
 	
 	
