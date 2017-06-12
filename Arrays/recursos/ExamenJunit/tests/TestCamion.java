@@ -1,4 +1,3 @@
-package paqueteTest;
 import static org.junit.Assert.*;
 
 import org.junit.Before;
@@ -14,7 +13,7 @@ public class TestCamion {
 	@Before
 	public void setUp() {
 
-		c1 = new Camion("4545DNB", 30, 40);//3040   
+		c1 = new Camion("4545DNB", 30, 40);
 		c2 = new Camion("1234ABC", 50, 40);
 	}
 
@@ -27,28 +26,20 @@ public class TestCamion {
 		// de carga
 		// Ya que no puede cargar mas unidades que lo que indica su limite de
 		// carga
-		System.out.println("carga "+carga+" c2.carga "+c2.getCarga()+" limitecarga "+c2.getLimiteCarga());
 		c2.cargar(carga);
-		System.out.println("carga "+carga+" c2.carga "+c2.getCarga()+" limitecarga "+c2.getLimiteCarga());
 		assertTrue(c2.getCarga() == c2.getLimiteCarga());
 
 		// Voy a descargar el "c1" con una carga que sobrepasa la carga que
 		// lleva el camion
 		// Con lo cual la carga que lleva el "c1" pasará a ser igual a 0
 		// Ya que no se puede dejar un camion con una carga negativa
-		//antes
-		System.out.println("carga "+carga+" c1.carga "+c1.getCarga()+" limitecarga "+c1.getLimiteCarga()+" descarga "+decarga);
 		c1.descargar(decarga);
-		//despues
-		System.out.println("carga "+carga+" c1.carga "+c1.getCarga()+" limitecarga "+c1.getLimiteCarga()+" descarga "+decarga);
 		assertTrue(c1.getCarga() == 0);
 
 		// Voy a cagar, una vez descargado, el "c1" para comprobar que se carga
 		// bien el camion
 
 		c1.cargar(carga);
-		//cargar
-		System.out.println("carga "+carga+" c1.carga "+c1.getCarga()+" limitecarga "+c1.getLimiteCarga()+" descarga "+decarga);
 		assertTrue(c1.getCarga() == 11);
 
 		// Voy a descagar, una vez cargado hasta el limite, el "c2" para
@@ -61,13 +52,10 @@ public class TestCamion {
 		// camion y descargar 0,
 
 		c1.descargar(0);
-		System.out.println("carga "+carga+" c1.carga "+c1.getCarga()+" limitecarga "+c1.getLimiteCarga()+" descarga "+decarga);
 		assertTrue(c1.getCarga() == 11);
 
 		c1.cargar(19);
-		System.out.println("carga "+carga+" c1.carga "+c1.getCarga()+" limitecarga "+c1.getLimiteCarga()+" descarga "+decarga);
 		c1.descargar(c1.getLimiteCarga());
-		System.out.println("carga "+carga+" c1.carga "+c1.getCarga()+" limitecarga "+c1.getLimiteCarga()+" descarga "+decarga);
 		assertTrue(c1.getCarga() == 0);
 
 		// Y pruebo a cargar hasta el limite y a carga 0.
