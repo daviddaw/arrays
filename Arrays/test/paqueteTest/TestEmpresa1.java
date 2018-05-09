@@ -5,8 +5,8 @@ import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
 
-import paqueteCodigo.Camion;
-import paqueteCodigo.Empresa;
+import paqueteCodigos.Camion;
+import paqueteCodigos.Empresa;
 
 public class TestEmpresa1 {
 	Camion camion1,camion2,camion3,camion4;

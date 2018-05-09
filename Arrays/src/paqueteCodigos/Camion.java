@@ -1,4 +1,4 @@
-package paqueteCodigo;
+package paqueteCodigos;
 
 public class Camion {
 	

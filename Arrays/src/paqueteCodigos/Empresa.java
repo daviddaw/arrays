@@ -1,4 +1,4 @@
-package paqueteCodigo;
+package paqueteCodigos;
 import java.util.ArrayList;
   
 public class Empresa 
