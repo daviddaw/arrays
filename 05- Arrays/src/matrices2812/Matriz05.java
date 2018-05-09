@@ -20,9 +20,9 @@ public class Matriz05 {
 			}
 		}
 		
-		System.out.println(" ");
+		System.out.println("    ");
 		System.out.println(" 	    Sistemas   Programacion    Marcas       Bases      Entornos");
-		for (int i = 0; i < tabla.length; i++) {//inicia en 0 generando nueve huecos
+		for (int i = 0; i < tabla.length; i++) {//inicia      en 0 generando nueve huecos
 			System.out.println(" ");
 			  System.out.print("Alumno "+i+" ");
 			for (int j = 0; j < tabla[i].length; j++) {
